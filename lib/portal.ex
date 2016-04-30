@@ -47,8 +47,9 @@ defmodule Portal do
     portal
   end
 end
+
 defimpl Inspect, for: Portal do
-  def inspect(%Portal{left: left, right: right}. _) do
+  def inspect(%Portal{left: left, right: right}, _) do
     left_door = inspect(left)
     right_door = inspect(right)
 
